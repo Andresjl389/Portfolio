@@ -1,0 +1,14 @@
+{
+    "list":{
+        "home" : "Home",
+        "about" : "About",
+        "stack" : "Tech Stack",
+        "project" : "Projects",
+        "contact" : "Contact"
+    },
+    "links":{
+        "github" : "https://github.com/Andresjl389",
+        "linkedin" : "https://www.linkedin.com/in/andres-felipe-jaimes-lugo",
+        "twitter" : "Twitter"
+    }
+}
