@@ -1,6 +1,7 @@
 import React from "react";
 import "./card.css";
 import { homeTexts } from "../../../../../domain/consts/texts";
+import  foto  from '../../../../assets/Me.jpeg'
 
 const CardInfo: React.FC = () => {
   return (
@@ -13,7 +14,8 @@ const CardInfo: React.FC = () => {
           <p>{homeTexts.info.info}</p>
         </div>
 
-        <div className="CardContainer--img"></div>
+        
+          <div className="CardContainer--img"><img src={foto} className="foto" /></div>
       </div>
     </>
   );
