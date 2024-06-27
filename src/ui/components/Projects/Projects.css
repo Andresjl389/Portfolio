@@ -1,0 +1,8 @@
+.ProjectCard{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
+    flex-wrap: wrap;
+    width: 80%;
+    min-width: 300px;
+}

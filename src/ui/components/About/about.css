@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+.About{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    flex-wrap: wrap;
+    margin-left: 8%;
+    font-family: 'DM Sans', cursive;
+}
+
+.TitleAbout, .NameUniversity{
+    color: #42446E;
+    margin: 0;
+}
+
+
+
+.SubtitleAbout{
+    color: #666666;
+}
+
+.ExperienceContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 20px;
+}
+
+.ItemsContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MoreInfo{
+    width: 15%;
+    height: 30px;
+    background: #D7FFE0;
+    border: none;
+    border-radius: 20px;
+    color: #018C0F;
+}
+
+.MoreInfo:hover{
+    background: #66bd7a;
+    color: #D7FFE0;
+    cursor: pointer;
+}
+
+.AnotherInfoContainer{
+    display: flex;
+    color: #666666;
+    align-items: center;
+}
+
+.ModalContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.ModalContainer--info{
+    background: #fff;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 4vh;
+    
+}
+
+.TitleModal{
+    color: #42446E;
+    margin: 0;
+}
+
+.Modal--list{
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    min-width: 150px;
+}
+
+.Modal--list--li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.ButtonsContainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Button--View{
+    width: 20%;
+    height: 35px;
+    background: #4F4F4F;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    margin-right: 5px;
+
+}
+.Button--Close{
+    width: 20%;
+    height: 35px;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    color: #4F4F4F;
+    border: 1px solid #4F4F4F;
+    margin-left: 5px;
+}
+
+.Button--Close:hover{
+    background: #4F4F4F;
+    color: #fff;
+    cursor: pointer;
+}
+.Button--View:hover{
+    background: transparent;
+    color: #4F4F4F;
+    border: 1px solid #4F4F4F;
+    cursor: pointer;
+}

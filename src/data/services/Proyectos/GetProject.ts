@@ -4,7 +4,7 @@ import {FastApi} from '../../../domain/interfaces'
 export const getProjects = async() =>{
     try{
         const headers = {'content-type': 'application/json'}
-        const response = await axios.get(`${FastApi.API_URL}/movies`,{headers})
+        const response = await axios.get(`${FastApi.API_URL}/get_tech_stack`,{headers})
 
         const projectData = response.data
         console.log('Respose from getProject', projectData)

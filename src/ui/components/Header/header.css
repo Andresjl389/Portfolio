@@ -18,6 +18,7 @@
 
 .ListContainer--ul{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .ListContainer--ul--li{
@@ -42,5 +43,5 @@
     align-items: center;
     font-size: 16px;
     cursor: pointer;
-    color: #00ff00;
+    color: #00C0FD;
 }

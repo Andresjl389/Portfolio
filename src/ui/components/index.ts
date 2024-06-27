@@ -1,2 +1,7 @@
 export * from './Header'
+export * from './HeaderResponsive'
 export * from './Stack'
+export * from './cardStack'
+export * from './footer'
+export * from './Loading'
+export * from './About'

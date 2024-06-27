@@ -1,8 +1,8 @@
 import React, { ImgHTMLAttributes, useState } from "react";
-import "./header.css";
-import { headerTexts } from "../../../domain/consts/texts";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { ItemComponent } from "./components";
+import { FaBars, FaGithub, FaLinkedin, FaTimes } from "react-icons/fa";
+import { headerTexts } from "../../../domain/consts";
+import { ItemComponent } from "../Header/components";
+import { CSSTransition } from "react-transition-group";
 
 type Props = ImgHTMLAttributes<HTMLElement> & {
   refs: {
@@ -14,8 +14,9 @@ type Props = ImgHTMLAttributes<HTMLElement> & {
   };
 };
 
-const HeaderComponent = ({ src, refs }: Props) => {
+const HeaderMobileComponent = ({ src, refs }: Props) => {
   const [status, setStatus] = useState<number | null>(null);
+  const [showMenu, setShowMenu] = useState<boolean>(false);
 
   const handleStatus = (index: number) => {
     if (status === index) {
@@ -25,15 +26,35 @@ const HeaderComponent = ({ src, refs }: Props) => {
     }
   };
 
+  const handleMenuToggle = () => {
+    setShowMenu(!showMenu);
+  };
+
   const handleScrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
+  const backgoundColor = showMenu ? "#efefef" : "transparent";
+
   return (
-    <>
-      <header className="ContainerHeader">
+    <header
+    //   style={{
+    //     display: "flex",
+    //     justifyContent: "space-between",
+    //     alignItems: "center",
+    //     padding: 10,
+    //   }}
+    >
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          padding: "20px 20px 0px 20px",
+          background: backgoundColor,
+        }}
+      >
         <img
           className="ImgHeader"
           src={src}
@@ -41,8 +62,24 @@ const HeaderComponent = ({ src, refs }: Props) => {
             window.open("https://www.instagram.com/jaimes.andresfelipe/")
           }
         />
-        <div className="ListContainer">
-          <ul className="ListContainer--ul">
+        <button
+          onClick={handleMenuToggle}
+          style={{ background: "transparent", border: "none" }}
+        >
+          {showMenu ? <FaTimes fontSize={25} /> : <FaBars fontSize={25} />}
+        </button>
+      </div>
+      {showMenu && (
+        <div
+          style={{
+            zIndex: 10,
+            background: "#efefef",
+            display: "flex",
+            width: "100%",
+            justifyContent: "center",
+          }}
+        >
+          <ul style={{ display: "flex", flexDirection: "column", padding: 0 }}>
             {[
               { text: headerTexts.list.home, ref: refs.homeRef },
               { text: headerTexts.list.about, ref: refs.aboutStack },
@@ -74,9 +111,9 @@ const HeaderComponent = ({ src, refs }: Props) => {
             </li>
           </ul>
         </div>
-      </header>
-    </>
+      )}
+    </header>
   );
 };
 
-export default HeaderComponent;
+export default HeaderMobileComponent;
