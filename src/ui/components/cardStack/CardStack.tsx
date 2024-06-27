@@ -1,7 +1,3 @@
-import React, { useEffect, useState } from "react";
-import { ProjectType } from "../../../domain/interfaces";
-import useProjectModel from "../../../domain/models/Projects";
-
 type Props = {
   id?: string;
   title?: string;
