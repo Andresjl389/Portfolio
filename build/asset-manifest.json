@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d891d019.css",
-    "main.js": "/static/js/main.d0d5058e.js",
+    "main.js": "/static/js/main.1da067c3.js",
     "static/js/453.8cae3178.chunk.js": "/static/js/453.8cae3178.chunk.js",
     "static/media/Me.jpeg": "/static/media/Me.2b619dd279b93d34eea0.jpeg",
     "static/media/Threads.png": "/static/media/Threads.55b8ee3412243f5c6014.png",
@@ -14,11 +14,11 @@
     "static/media/AgroSmartForcast.png": "/static/media/AgroSmartForcast.51dad119698e8fc676de.png",
     "index.html": "/index.html",
     "main.d891d019.css.map": "/static/css/main.d891d019.css.map",
-    "main.d0d5058e.js.map": "/static/js/main.d0d5058e.js.map",
+    "main.1da067c3.js.map": "/static/js/main.1da067c3.js.map",
     "453.8cae3178.chunk.js.map": "/static/js/453.8cae3178.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d891d019.css",
-    "static/js/main.d0d5058e.js"
+    "static/js/main.1da067c3.js"
   ]
 }
