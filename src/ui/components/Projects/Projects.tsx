@@ -38,13 +38,13 @@ const ProjectsComponent = () => {
         and their financial reports can be accessed. This financial module meets
         the specific requirements of Call Centers, as it allows interaction with
         other modules of the ERP that was being developed."
-        title="CallCenter Modulo Financiero"
+        title="CallCenter Financial Module"
         url="https://github.com/Andresjl389/CallCenter.git"
       />
 
       <CardComponent
         image={CallCenterBack}
-        title="CallCenter Modulo Financiero Backend"
+        title="CallCenter Financial Module Backend"
         description="Backend of the financial module of an ERP, developed in Django. The main
         objective of this backend is to connect with the PostgreSQL database and
         create endpoints that enable the development of the necessary algorithms
