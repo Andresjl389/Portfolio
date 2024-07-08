@@ -26,10 +26,10 @@ const AboutComponent = () => {
 
       <h2 className="TitleAbout">Education</h2>
       <h3 className="NameUniversity">Universidad Manuela Beltrán</h3>
-        <p>Ingeniería de Software<br/>
-        Octavo semestre</p>
+        <p>Software engineering<br/>
+        Eighth semester</p>
 
-      <h2 className="TitleAbout">Experiencia Laboral</h2>
+      <h2 className="TitleAbout">Work experience</h2>
 
       <ExperienceComponent title="Freelancer in Software Development" typeProject="Frontend projects" techList={['React', 'Angular', 'JavaScript', 'TypeScript']} />
       <ExperienceComponent title="Freelancer in Software Development" typeProject="Backend projects" techList={['Django', 'FastApi', 'Java', 'Flask']} />
